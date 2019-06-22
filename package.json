@@ -1,0 +1,67 @@
+{
+    "private": true,
+    "name": "warsawjs-workshop-33-twitter",
+    "version": "0.0.0",
+    "description": "",
+    "license": "MIT",
+    "author": {
+        "name": "Piotr Kowalski",
+        "email": "piecioshka@gmail.com",
+        "url": "https://piecioshka.pl/"
+    },
+    "scripts": {
+        "db": "json-server db/tweets.json",
+        "clear": "rm -rf dist",
+        "clear:all": "rm -rf node_modules/ && npm run clear",
+        "dev": "webpack-dev-server --config webpack/webpack.config.dev.js",
+        "deploy": "cross-env NODE_DEBUG=gh-pages gh-pages -d dist/",
+        "test": "mocha-webpack --webpack-config webpack/webpack.config.dev.js --ui tdd --require test/setup.js test/specs/**",
+        "test:watch": "npm test -- --watch",
+        "build": "webpack --config webpack/webpack.config.dev.js",
+        "watch": "npm run build -- --watch",
+        "build:prod": "webpack --config webpack/webpack.config.prod.js",
+        "lint": "eslint ."
+    },
+    "dependencies": {
+        "bootstrap": "^4.3.1",
+        "bootstrap-vue": "^2.0.0-rc.24",
+        "vue": "^2.6.10"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.4.5",
+        "@babel/plugin-proposal-class-properties": "^7.4.4",
+        "@babel/preset-env": "^7.4.5",
+        "@vue/test-utils": "^1.0.0-beta.29",
+        "babel-eslint": "^10.0.2",
+        "babel-loader": "^8.0.6",
+        "chai": "^4.2.0",
+        "cross-env": "^5.2.0",
+        "css-loader": "^3.0.0",
+        "eslint": "^6.0.0",
+        "eslint-config-piecioshka": "^2.0.1",
+        "extract-loader": "^3.1.0",
+        "file-loader": "^4.0.0",
+        "gh-pages": "^2.0.1",
+        "html-loader": "^0.5.5",
+        "jsdom": "^15.1.1",
+        "jsdom-global": "^3.0.2",
+        "json-server": "^0.15.0",
+        "mocha": "^6.1.4",
+        "mocha-webpack": "^2.0.0-beta.0",
+        "node-fetch": "^2.6.0",
+        "style-loader": "^0.23.1",
+        "vue-loader": "^15.7.0",
+        "vue-style-loader": "^4.1.2",
+        "vue-template-compiler": "^2.6.10",
+        "webpack": "^4.35.0",
+        "webpack-cli": "^3.3.4",
+        "webpack-dev-server": "^3.7.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/piecioshka/warsawjs-workshop-33-twitter.git"
+    },
+    "engines": {
+        "node": ">=8"
+    }
+}
