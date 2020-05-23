@@ -2,7 +2,7 @@
 
 [![circle-ci](https://circleci.com/gh/piecioshka/warsawjs-workshop-33-twitter.svg?style=svg)](https://circleci.com/gh/piecioshka/warsawjs-workshop-33-twitter)
 
-⛩️ WarsawJS Workshop #33 — Vue.js — Twitter
+⛩️ WarsawJS Workshop #33 — Vue.js
 
 ## Demo 🎉
 
