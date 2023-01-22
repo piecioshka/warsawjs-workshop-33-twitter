@@ -4,7 +4,7 @@
 
 ⛩️ WarsawJS Workshop #33 — Vue.js
 
-## Demo 🎉
+## Preview 🎉
 
 <https://piecioshka.github.io/warsawjs-workshop-33-twitter>
 
