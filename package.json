@@ -14,6 +14,7 @@
         "clear": "rm -rf dist",
         "clear:all": "rm -rf node_modules/ && npm run clear",
         "dev": "webpack-dev-server --config webpack/webpack.config.dev.js",
+        "predeploy": "npm run clear && npm run build:prod",
         "deploy": "cross-env NODE_DEBUG=gh-pages gh-pages -d dist/",
         "test": "mocha-webpack --webpack-config webpack/webpack.config.dev.js --ui tdd --require test/setup.js test/specs/**",
         "test:watch": "npm test -- --watch",
